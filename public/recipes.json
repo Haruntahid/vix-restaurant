@@ -11,8 +11,8 @@
       "2 slices of cheese",
       "2 burger buns"
     ],
-    "time": "20 min",
-    "calories": "450 calories",
+    "time": 20,
+    "calories": 450,
     "image": "https://i.ibb.co/0nSYzQm/beef-burger-1200x675.jpg"
   },
   {
@@ -27,8 +27,8 @@
       "50 g olives",
       "50 ml olive oil"
     ],
-    "time": "25 min",
-    "calories": "300 calories",
+    "time": 25,
+    "calories": 300,
     "image": "https://i.ibb.co/6WQGc84/pasta-primavera.jpg"
   },
   {
@@ -43,8 +43,8 @@
       "Fresh herbs (such as dill, parsley)",
       "Salt and pepper to taste"
     ],
-    "time": "15 min",
-    "calories": "380 calories",
+    "time": 15,
+    "calories": 380,
     "image": "https://i.ibb.co/Hq0Mvhj/recipe-9918-676836842.jpg"
   },
   {
@@ -58,8 +58,8 @@
       "Fresh basil leaves",
       "50 ml balsamic glaze"
     ],
-    "time": "15 min",
-    "calories": "320 calories",
+    "time": 15,
+    "calories": 320,
     "image": "https://i.ibb.co/DbdfDhW/caprese-panini-plated-735x735.jpg"
   },
   {
@@ -73,8 +73,8 @@
       "30 g Parmesan cheese",
       "50 ml Caesar dressing"
     ],
-    "time": "20 min",
-    "calories": "280 calories",
+    "time": 20,
+    "calories": 280,
     "image": "https://i.ibb.co/LQzC0MT/FT-Chicken-Caesar-Salad-Spend-With-Pennies-4.jpg"
   },
   {
@@ -89,8 +89,8 @@
       "2 tbsp curry powder",
       "1 onion"
     ],
-    "time": "35 min",
-    "calories": "250 calories",
+    "time": 35,
+    "calories": 250,
     "image": "https://i.ibb.co/c6mxSS1/Vegetable-Curry-001.jpg"
   }
 ]

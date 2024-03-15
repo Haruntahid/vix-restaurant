@@ -2,7 +2,7 @@ import { IoMdTime } from "react-icons/io";
 import { RiFireLine } from "react-icons/ri";
 import PropTypes from "prop-types";
 
-function RecipeCart({ recipe }) {
+function RecipeCart({ recipe, handelWantToCook }) {
   const { name, description, ingredients, time, calories, image } = recipe;
   return (
     <>
@@ -40,7 +40,10 @@ function RecipeCart({ recipe }) {
             </p>
           </div>
           <div className="mt-6">
-            <button className="text-[#150B2B] text-[18px] font-medium bg-[#0BE58A] px-6 py-3 rounded-full">
+            <button
+              onClick={() => handelWantToCook(recipe)}
+              className="text-[#150B2B] text-[18px] font-medium bg-[#0BE58A] px-6 py-3 rounded-full"
+            >
               Want to Cook
             </button>
           </div>
@@ -52,6 +55,7 @@ function RecipeCart({ recipe }) {
 
 RecipeCart.propTypes = {
   recipe: PropTypes.object,
+  handelWantToCook: PropTypes.func,
 };
 
 export default RecipeCart;

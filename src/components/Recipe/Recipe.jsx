@@ -1,7 +1,15 @@
+import Sidebar from "../Sidebar/Sidebar";
 import RecipeCart from "./RecipeCart";
 import PropTypes from "prop-types";
 
-function Recipe({ recipes }) {
+function Recipe({
+  recipes,
+  handelWantToCook,
+  wantToCook,
+  handleRemoveItem,
+  item,
+  totalTime,
+}) {
   return (
     <>
       <div className="mt-24">
@@ -17,10 +25,21 @@ function Recipe({ recipes }) {
         <div className="flex gap-8">
           <div className="w-3/5 grid grid-cols-2 gap-4">
             {recipes.map((recipe) => (
-              <RecipeCart key={recipe.id} recipe={recipe} />
+              <RecipeCart
+                key={recipe.id}
+                recipe={recipe}
+                handelWantToCook={handelWantToCook}
+              />
             ))}
           </div>
-          <div className="w-2/5">sidebar</div>
+          <div className="w-2/5">
+            <Sidebar
+              wantToCook={wantToCook}
+              handleRemoveItem={handleRemoveItem}
+              item={item}
+              totalTime={totalTime}
+            />
+          </div>
         </div>
       </div>
     </>
@@ -28,7 +47,13 @@ function Recipe({ recipes }) {
 }
 
 Recipe.propTypes = {
-  recipes: PropTypes.object,
+  recipes: PropTypes.array,
+  handelWantToCook: PropTypes.func,
+  wantToCook: PropTypes.array,
+  count: PropTypes.number,
+  handleRemoveItem: PropTypes.func,
+  item: PropTypes.array,
+  totalTime: PropTypes.number,
 };
 
 export default Recipe;
