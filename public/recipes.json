@@ -1,0 +1,96 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Beef Burger",
+    "description": "Juicy beef patty topped with fresh lettuce, ripe tomatoes, and melted cheese, served in a toasted bun.",
+    "ingredients": [
+      "200 g ground beef",
+      "1 tomato",
+      "1 onion",
+      "2 lettuce leaves",
+      "2 slices of cheese",
+      "2 burger buns"
+    ],
+    "time": "20 min",
+    "calories": "450 calories",
+    "image": "https://i.ibb.co/0nSYzQm/beef-burger-1200x675.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Vegetarian Pasta Primavera",
+    "description": "Colorful pasta dish loaded with fresh vegetables like bell peppers, zucchini, and cherry tomatoes, tossed in a light olive oil sauce.",
+    "ingredients": [
+      "250 g pasta",
+      "1 bell pepper",
+      "1 zucchini",
+      "100 g cherry tomatoes",
+      "50 g olives",
+      "50 ml olive oil"
+    ],
+    "time": "25 min",
+    "calories": "300 calories",
+    "image": "https://i.ibb.co/6WQGc84/pasta-primavera.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Grilled Salmon with Lemon Herb Butter",
+    "description": "Tender salmon fillet seasoned with herbs and grilled to perfection, served with a flavorful lemon herb butter sauce.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 lemon",
+      "50 g butter",
+      "2 cloves garlic",
+      "Fresh herbs (such as dill, parsley)",
+      "Salt and pepper to taste"
+    ],
+    "time": "15 min",
+    "calories": "380 calories",
+    "image": "https://i.ibb.co/Hq0Mvhj/recipe-9918-676836842.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Caprese Panini",
+    "description": "A delicious Italian sandwich featuring fresh mozzarella, ripe tomatoes, and fragrant basil leaves, pressed in crispy ciabatta bread.",
+    "ingredients": [
+      "4 slices of ciabatta bread",
+      "200 g fresh mozzarella",
+      "2 tomatoes",
+      "Fresh basil leaves",
+      "50 ml balsamic glaze"
+    ],
+    "time": "15 min",
+    "calories": "320 calories",
+    "image": "https://i.ibb.co/DbdfDhW/caprese-panini-plated-735x735.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Chicken Caesar Salad",
+    "description": "A classic salad made with crisp romaine lettuce, grilled chicken breast, crunchy croutons, and tangy Caesar dressing.",
+    "ingredients": [
+      "200 g grilled chicken breast",
+      "100 g romaine lettuce",
+      "50 g croutons",
+      "30 g Parmesan cheese",
+      "50 ml Caesar dressing"
+    ],
+    "time": "20 min",
+    "calories": "280 calories",
+    "image": "https://i.ibb.co/LQzC0MT/FT-Chicken-Caesar-Salad-Spend-With-Pennies-4.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Vegetable Curry",
+    "description": "A fragrant and spicy curry filled with a variety of vegetables like potatoes, carrots, and peas, simmered in a rich coconut milk sauce.",
+    "ingredients": [
+      "2 potatoes",
+      "1 carrot",
+      "100 g peas",
+      "200 ml coconut milk",
+      "2 tbsp curry powder",
+      "1 onion"
+    ],
+    "time": "35 min",
+    "calories": "250 calories",
+    "image": "https://i.ibb.co/c6mxSS1/Vegetable-Curry-001.jpg"
+  }
+]

@@ -1,4 +1,7 @@
-function Recipe() {
+import RecipeCart from "./RecipeCart";
+import PropTypes from "prop-types";
+
+function Recipe({ recipes }) {
   return (
     <>
       <div className="mt-24">
@@ -10,13 +13,22 @@ function Recipe() {
           vulputate netus pharetra rhoncus. Eget <br /> urna volutpat curabitur
           elementum mauris aenean neque.
         </p>
-        <div className="flex">
-          <div className="w-2/4">menus</div>
-          <div className="w-2/4">sidebar</div>
+
+        <div className="flex gap-8">
+          <div className="w-3/5 grid grid-cols-2 gap-4">
+            {recipes.map((recipe) => (
+              <RecipeCart key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
+          <div className="w-2/5">sidebar</div>
         </div>
       </div>
     </>
   );
 }
+
+Recipe.propTypes = {
+  recipes: PropTypes.object,
+};
 
 export default Recipe;
