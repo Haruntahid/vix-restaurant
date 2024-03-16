@@ -18,15 +18,15 @@ function RecipeCart({ recipe, handelWantToCook }) {
           <h2 className="text-xl text-[#282828] mt-6 mb-4">{name}</h2>
           <p className="text-[#878787]">{description}</p>
           <div className="divider"></div>
-          <p>Ingredients: {ingredients.length}</p>
-          <ul className="ml-5 mt-4">
-            {ingredients
-              .map((pd, index) => (
-                <li key={index} className="text-[#878787] text-[18px]">
-                  {pd}
-                </li>
-              ))
-              .slice(0, 3)}
+          <p className="text-[18px] font-medium">
+            Ingredients: {ingredients.length}
+          </p>
+          <ul className="ml-5 mt-4 list-disc">
+            {ingredients.map((pd, index) => (
+              <li key={index} className="text-[#878787] text-[18px]">
+                {pd}
+              </li>
+            ))}
           </ul>
           <div className="divider"></div>
           <div className="flex gap-5">

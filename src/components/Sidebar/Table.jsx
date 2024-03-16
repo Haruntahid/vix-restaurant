@@ -4,7 +4,7 @@ function Table({ product, handleRemoveItem, index }) {
   const { name, time, calories } = product;
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <table className="table">
         <tbody>
           <tr className="bg-[#2828280D] border-b border-[#0BE58A] text-center">

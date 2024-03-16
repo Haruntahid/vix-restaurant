@@ -21,7 +21,7 @@ function Sidebar({
           <tbody>
             <tr className="">
               <th></th>
-              <td className="w-[37%] text-start">Name</td>
+              <td className="w-[23%] lg:w-[37%] text-start">Name</td>
               <td className="w-[20%] text-center">Time</td>
               <td className="w-[20%]">Calories</td>
               <td className="w-1/4"></td>
@@ -62,7 +62,7 @@ function Sidebar({
       {item.length > 0 && (
         <div>
           <div className="divider w-4/5 mx-auto"></div>
-          <div className="flex p-8 flex-col">
+          <div className="flex p-8 flex-col items-end">
             <p>Total time : {totalTime} minutes</p>
             <p>Total Calories : {totalCalories} calories</p>
           </div>
