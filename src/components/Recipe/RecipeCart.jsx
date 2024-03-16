@@ -32,11 +32,11 @@ function RecipeCart({ recipe, handelWantToCook }) {
           <div className="flex gap-5">
             <p className="inline-flex gap-2 items-center text-[18px]">
               <IoMdTime className="text-gray" />
-              <span>{time}</span>
+              <span>{time} minutes</span>
             </p>
             <p className="inline-flex gap-2 items-center text-[18px]">
               <RiFireLine className="text-gray" />
-              <span>{calories}</span>
+              <span>{calories} Calories</span>
             </p>
           </div>
           <div className="mt-6">

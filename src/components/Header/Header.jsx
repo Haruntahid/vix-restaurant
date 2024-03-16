@@ -3,7 +3,7 @@ import profile from "/profile.png";
 function Header() {
   return (
     <div>
-      <div className="navbar bg-base-100 my-10 flex justify-between">
+      <div className="navbar bg-base-100 my-0 lg:my-10 flex justify-between">
         <div className="">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,7 +40,7 @@ function Header() {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-3xl">Vix Restaurant</a>
+          <a className="btn btn-ghost text-xl lg:text-3xl">Vix Restaurant</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-[16px] text-[#150B2BB3]">
@@ -59,7 +59,7 @@ function Header() {
           </ul>
         </div>
 
-        <div className="flex-none gap-2">
+        <div className="flex-none gap-2 hidden lg:flex">
           <div className="flex items-center bg-[#150B2B0D] px-4 py-3 rounded-full">
             <svg
               className="w-4 h-4 mr-2 text-gray-600 text-xl"

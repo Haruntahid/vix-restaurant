@@ -21,21 +21,22 @@ function Sidebar({
           <tbody>
             <tr className="">
               <th></th>
-              <td className="w-2/6 text-start">Name</td>
-              <td className="w-1/5 text-center">Time</td>
-              <td className="w-1/4">Calories</td>
+              <td className="w-[37%] text-start">Name</td>
+              <td className="w-[20%] text-center">Time</td>
+              <td className="w-[20%]">Calories</td>
               <td className="w-1/4"></td>
             </tr>
           </tbody>
         </table>
       )}
 
-      {wantToCook.map((product) => (
+      {wantToCook.map((product, index) => (
         <Table
           key={product.id}
           product={product}
           wantToCook={wantToCook}
           handleRemoveItem={handleRemoveItem}
+          index={index}
         />
       ))}
       <h1 className="font-semibold text-2xl text-center mt-8">
@@ -46,6 +47,7 @@ function Sidebar({
         <table className="table">
           <tbody>
             <tr className="">
+              <td className=""></td>
               <td className="w-2/4">Name</td>
               <td className="w-1/4 text-center">Time</td>
               <td className="w-1/4 text-center">Calories</td>
@@ -53,14 +55,14 @@ function Sidebar({
           </tbody>
         </table>
       )}
-      {item.map((product) => (
-        <CurrentTable key={product.id} product={product} />
+      {item.map((product, index) => (
+        <CurrentTable key={product.id} product={product} index={index} />
       ))}
 
       {item.length > 0 && (
         <div>
           <div className="divider w-4/5 mx-auto"></div>
-          <div className="flex justify-around">
+          <div className="flex p-8 flex-col">
             <p>Total time : {totalTime} minutes</p>
             <p>Total Calories : {totalCalories} calories</p>
           </div>
@@ -76,6 +78,7 @@ Sidebar.propTypes = {
   handleRemoveItem: PropTypes.func,
   totalTime: PropTypes.number,
   totalCalories: PropTypes.number,
+  count: PropTypes.number,
 };
 
 export default Sidebar;

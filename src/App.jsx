@@ -17,7 +17,7 @@ function App() {
     const isExist = wantToCook.find((rcp) => rcp.id == recipe.id);
     if (!isExist) {
       setWantToCook([...wantToCook, recipe]);
-      toast.success("Want to Cook");
+      toast.success("Added Want to Cook");
     } else {
       toast.error("already exist");
     }
@@ -25,7 +25,7 @@ function App() {
 
   const displayItemOnCurrentCooking = (recipe) => {
     setItem([...item, recipe]);
-    toast.success("Added to Cook");
+    toast.success("Added to Currently cooking");
   };
 
   const handleRemoveItem = (product) => {
