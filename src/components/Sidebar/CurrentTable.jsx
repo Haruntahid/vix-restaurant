@@ -6,11 +6,10 @@ function CurrentTable({ product }) {
     <>
       <table className="table">
         <tbody>
-          <tr className="">
-            <th></th>
-            <td>{name}</td>
-            <td>{time}</td>
-            <td>{calories}</td>
+          <tr className="bg-[#2828280D] border-b border-[#0BE58A] py-6">
+            <td className="w-2/4">{name}</td>
+            <td className="w-1/4 text-center">{time}</td>
+            <td className="w-1/4 text-center">{calories}</td>
           </tr>
         </tbody>
       </table>

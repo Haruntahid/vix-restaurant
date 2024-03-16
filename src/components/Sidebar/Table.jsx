@@ -6,10 +6,9 @@ function Table({ product, handleRemoveItem }) {
     <div>
       <table className="table">
         <tbody>
-          <tr className="bg-[#2828280D] border-b border-red-600">
-            <th></th>
+          <tr className="bg-[#2828280D] border-b border-[#0BE58A] text-center">
             <td>1</td>
-            <td className="w-2/4">{name}</td>
+            <td className="w-2/4 text-start">{name}</td>
             <td className="w-1/4">{time}</td>
             <td className="w-1/4">{calories}</td>
             <td>

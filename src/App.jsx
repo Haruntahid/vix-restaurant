@@ -4,24 +4,28 @@ import Header from "./components/Header/Header";
 import Recipe from "./components/Recipe/Recipe";
 import "./index.css";
 import { useEffect } from "react";
+import { toast } from "react-toastify";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
   const [wantToCook, setWantToCook] = useState([]);
   const [item, setItem] = useState([]);
   const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   const handelWantToCook = (recipe) => {
     const isExist = wantToCook.find((rcp) => rcp.id == recipe.id);
     if (!isExist) {
       setWantToCook([...wantToCook, recipe]);
+      toast.success("Want to Cook");
     } else {
-      alert("already exist");
+      toast.error("already exist");
     }
   };
 
   const displayItemOnCurrentCooking = (recipe) => {
     setItem([...item, recipe]);
+    toast.success("Added to Cook");
   };
 
   const handleRemoveItem = (product) => {
@@ -29,6 +33,7 @@ function App() {
     setWantToCook(remainingItems);
     displayItemOnCurrentCooking(product);
     setTotalTime(totalTime + product.time);
+    setTotalCalories(totalCalories + product.calories);
   };
 
   useEffect(() => {
@@ -42,7 +47,6 @@ function App() {
       <div className="container mx-auto">
         <Header />
         <Banner />
-        {totalTime}
         <Recipe
           recipes={recipes}
           handelWantToCook={handelWantToCook}
@@ -50,6 +54,7 @@ function App() {
           handleRemoveItem={handleRemoveItem}
           item={item}
           totalTime={totalTime}
+          totalCalories={totalCalories}
         />
       </div>
     </>

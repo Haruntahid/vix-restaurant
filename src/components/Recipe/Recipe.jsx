@@ -9,6 +9,7 @@ function Recipe({
   handleRemoveItem,
   item,
   totalTime,
+  totalCalories,
 }) {
   return (
     <>
@@ -38,6 +39,7 @@ function Recipe({
               handleRemoveItem={handleRemoveItem}
               item={item}
               totalTime={totalTime}
+              totalCalories={totalCalories}
             />
           </div>
         </div>
@@ -54,6 +56,7 @@ Recipe.propTypes = {
   handleRemoveItem: PropTypes.func,
   item: PropTypes.array,
   totalTime: PropTypes.number,
+  totalCalories: PropTypes.number,
 };
 
 export default Recipe;

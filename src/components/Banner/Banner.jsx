@@ -1,7 +1,7 @@
 function Banner() {
   return (
-    <div className="bg-[url('https://i.ibb.co/dGpcJsF/banner.png')] bg-no-repeat bg-cover">
-      <div className="py-[130px] max-w-[950px] mx-auto text-center">
+    <div className="bg-[url('https://i.ibb.co/dGpcJsF/banner.png')] rounded-[40px] bg-no-repeat bg-cover">
+      <div className="py-[180px] max-w-[950px] mx-auto text-center">
         <h1 className="font-bold text-5xl text-white leading-[76px]">
           Discover an exceptional cooking <br /> class tailored for you!
         </h1>
